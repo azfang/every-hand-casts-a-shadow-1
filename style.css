@@ -306,7 +306,7 @@ caption {
     .container29, .container30, .container31, .container32 {
         position: relative;
         z-index: 1;
-        width: 50%;
+        width: 100%;
         margin: 0;
         padding: 0;
         filter: blur(28px);
