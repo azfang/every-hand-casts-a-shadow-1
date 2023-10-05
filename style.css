@@ -1,0 +1,277 @@
+body {
+    cursor: crosshair;
+    /* cursor: none; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+h1 {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    z-index: 3;
+}
+
+h2 {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 3;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    /* color: white; */
+}
+
+caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.header-bg {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+}
+
+.textline1 {
+    width: 100vw;
+    padding: 0px 15px;
+    /* color: white; */
+}
+
+#cycle:after {
+    animation-name:cycle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    content: "";
+  }
+
+  @keyframes cycle {
+    0% {
+        content: "TO IMITATE / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    10% {
+        content: "To imitate / A LINE MADE BY DESIRE (YĪTIÁO YÓU YÙWÀNG GÒUCHÉNG DE XIÀN) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    20% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / DESIRE MADE BY A LINE (YĪXIÀN SUǑ CHÉNG DE YUÀNWÀNG) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    30% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / A LINE MADE OF DESIRE (YĪTIÁO YÓU YÙWÀNG ZǓCHÉNG DE XIÀN) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    40% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / DESIRE MADE OF A LINE (YUÀNWÀNG YÓU YĪTIÁO XIÀN ZǓCHÉNG) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    50% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / A LINE OF DESIRE (YĪTIÁO YÙWÀNG XIÀN) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    60% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / DESIRE OF A LINE (YĪXIÀN DE YUÀNWÀNG) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    70% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / A DESIRE LINE (YÙWÀNG XIÀN) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    80% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / A LINE DESIRE (YĪTIÁO XIÀN DE YUÀNWÀNG) / online desire (zàixiàn yuànwàng).";
+    }
+    90% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / desire line (yùwàng xiàn) / ONLINE DESIRE (ZÀIXIÀN YUÀNWÀNG).";
+    }
+    100% {
+        content: "TO IMITATE / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / desire line (yùwàng xiàn) / online desire (zàixiàn yuànwàng).";
+    }
+  }
+
+#lvl1 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.text {
+    width: 100vw;
+    position: fixed;
+    bottom: 2%;
+    z-index: 4;
+    padding: 0px 15px;
+    /* justify-content: flex-start; */
+}
+
+/* .grad1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 75px;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0));
+    z-index: 2;
+  } */
+
+/* .button {
+    font-family: monospace;
+    color: white;
+    background-color: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+} */
+
+.container1, .container2, .container3, .container4,
+.container5, .container6, .container7, .container8,
+.container9, .container10, .container11, .container12,
+.container13, .container14, .container15, .container16,
+.container17, .container18, .container19, .container20,
+.container21, .container22, .container23, .container24,
+.container25, .container26, .container27, .container28,
+.container29, .container30, .container31, .container32 {
+    position: relative;
+    z-index: 1;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    animation: blur-anim 5s linear forwards;
+    /* filter: blur(28px); */
+    /* transition: filter 1.25s  */
+}
+
+@keyframes blur-anim {
+	100% {	filter: blur(30px) };
+}
+
+@media (max-width: 800px) {
+    .container1, .container2, .container3, .container4,
+    .container5, .container6, .container7, .container8,
+    .container9, .container10, .container11, .container12,
+    .container13, .container14, .container15, .container16,
+    .container17, .container18, .container19, .container20,
+    .container21, .container22, .container23, .container24,
+    .container25, .container26, .container27, .container28,
+    .container29, .container30, .container31, .container32 {
+        position: relative;
+        z-index: 1;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        filter: blur(28px);
+        transition: filter 1.25s
+    }
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.25;
+        /* color: white; */
+    }
+}
+
+.container1:hover, .container2:hover, .container3:hover, .container4:hover,
+.container5:hover, .container6:hover, .container7:hover, .container8:hover,
+.container9:hover, .container10:hover, .container11:hover, .container12:hover,
+.container13:hover, .container14:hover, .container15:hover, .container16:hover,
+.container17:hover, .container18:hover, .container19:hover, .container20:hover,
+.container21:hover, .container22:hover, .container23:hover, .container24:hover,
+.container25:hover, .container26:hover, .container27:hover, .container28:hover,
+.container29:hover, .container30:hover, .container31:hover, .container32:hover {
+    /* z-index: 4; */
+    /* filter: blur(0px); */
+    animation: blur-undo 1s linear forwards;
+}
+
+@keyframes blur-undo {
+    0% { filter: blur(30px) }
+	100% {	filter: blur(0px) };
+}
+
+/* .container1:hover {
+    transform: scale(2);
+    translate: 40% 0px;
+    z-index: 2;
+} */
+
+.container1 .button, .container2 .button, .container3 .button, .container4 .button,
+.container5 .button, .container6 .button, .container7 .button, .container8 .button,
+.container9 .button, .container10 .button, .container11 .button, .container12 .button,
+.container13 .button, .container14 .button, .container15 .button, .container16 .button,
+.container17 .button, .container18 .button, .container19 .button, .container20 .button,
+.container21 .button, .container22 .button, .container23 .button, .container24 .button,
+.container25 .button, .container26 .button, .container27 .button, .container28 .button,
+.container29 .button, .container30 .button, .container31 .button, .container32 .button {
+    cursor: crosshair;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: none;
+    /* font-family: 'TestFont', monospace; */
+    /* font-size: 18px; */
+    /* font-family: monospace; */
+    background-color: none;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+    border: none;
+    margin: 0;
+    padding: 0;
+    /* padding: 16px 30px; */
+    border: none;
+    text-align: center;
+  }
+
+.order {
+    /* create the flex container */
+    /* left: 0%; */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* flex: 1; */
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    margin: 0;
+    padding: 0;
+    overflow-y: none;
+}
+
+.row2 {
+    /* create the flex container */
+    /* position: absolute; */
+    /* top: 25%; */
+    /* left: 0%; */
+    transform: translate(0px, -4px);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* flex: 1; */
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    margin: 0;
+    padding: 0;
+}
+
+.row3 {
+    /* create the flex container */
+    /* position: absolute; */
+    /* top: 25%; */
+    /* left: 0%; */
+    transform: translate(0px, -8px);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* flex: 1; */
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    margin: 0;
+    padding: 0;
+}
