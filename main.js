@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
     /*! Fades in page on load */
-    $('.button').css('display', 'none');
-    $('.button').fadeIn(500);
+    $('body').hide().delay(300).fadeIn(500)
     
     });
 
