@@ -47,7 +47,25 @@ caption {
     /* color: white; */
 }
 
-#cycle:after {
+#cycle1:after {
+    animation-name: cycle1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    content: "";
+}
+@keyframes cycle1 {
+    0% {
+        content: "10.21.2023";
+    }
+    50% {
+        content: "Chinese Brush Painting Basic Lesson 1:1";
+    }
+    100% {
+        content: "10.21.2023";
+    }
+  }
+
+/* #cycle:after {
     animation-name:cycle;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -88,7 +106,7 @@ caption {
     100% {
         content: "TO IMITATE / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / desire line (yùwàng xiàn) / online desire (zàixiàn yuànwàng).";
     }
-  }
+  } */
 
 #lvl1 {
     text-decoration-line: underline;
@@ -141,31 +159,6 @@ caption {
 
 @keyframes blur-anim {
 	100% {	filter: blur(30px) };
-}
-
-@media (max-width: 800px) {
-    .container1, .container2, .container3, .container4,
-    .container5, .container6, .container7, .container8,
-    .container9, .container10, .container11, .container12,
-    .container13, .container14, .container15, .container16,
-    .container17, .container18, .container19, .container20,
-    .container21, .container22, .container23, .container24,
-    .container25, .container26, .container27, .container28,
-    .container29, .container30, .container31, .container32 {
-        position: relative;
-        z-index: 1;
-        width: 50%;
-        margin: 0;
-        padding: 0;
-        filter: blur(28px);
-        transition: filter 1.25s
-    }
-    p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        line-height: 1.25;
-        /* color: white; */
-    }
 }
 
 .container1:hover, .container2:hover, .container3:hover, .container4:hover,
@@ -274,4 +267,55 @@ caption {
     /* justify-content: flex-start; */
     margin: 0;
     padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .container1, .container2, .container3, .container4,
+    .container5, .container6, .container7, .container8,
+    .container9, .container10, .container11, .container12,
+    .container13, .container14, .container15, .container16,
+    .container17, .container18, .container19, .container20,
+    .container21, .container22, .container23, .container24,
+    .container25, .container26, .container27, .container28,
+    .container29, .container30, .container31, .container32 {
+        position: relative;
+        z-index: 1;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        filter: blur(28px);
+        transition: filter 1.25s
+    }
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.25;
+        /* color: white; */
+    }
+}
+
+@media only screen and (orientation: portrait)
+{
+    .container1, .container2, .container3, .container4,
+    .container5, .container6, .container7, .container8,
+    .container9, .container10, .container11, .container12,
+    .container13, .container14, .container15, .container16,
+    .container17, .container18, .container19, .container20,
+    .container21, .container22, .container23, .container24,
+    .container25, .container26, .container27, .container28,
+    .container29, .container30, .container31, .container32 {
+        position: relative;
+        z-index: 1;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        filter: blur(28px);
+        transition: filter 1.25s
+    }
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.25;
+        /* color: white; */
+    }
 }
