@@ -1,241 +1,316 @@
-<!DOCTYPE html>
-<html>
+body {
+    cursor: crosshair;
+    /* cursor: none; */
+}
 
-<head>
-    <meta charset="utf-8">
-    <title>desire line</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="jquery.js"></script>
-    <script src="main.js"></script>
-</head>
+* {
+    margin: 0;
+    padding: 0;
+  }
 
-<body onLoad="scrollDiv_init()">
-<div class="order">
-    <!-- <div class="header">
-        <h1><img src="Video Assets/WIP/H1-Test.png">
-        </h1>
-        <h2><img src="Video Assets/WIP/H2-Test.png"></h2>
-    </div>
-    <div class="header-bg">
-        <img id="BG" src="Video Assets/WIP/Rectangle-Transparent.png">
-    </div> -->
-    <div class="container1">
-        <video id="vid1" class="feather-edges" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-            <source src="Video Assets/Finals/CP-1.mp4" type=video/mp4>
-        </video>
-        <button class="button"><span id="cycle1"></span></button>
-    </div>
-    <div class="container2">
-        <!-- <h1><img src="Video Assets/WIP/CursorAlpha_A.png">
-        </h1> -->
-        <video id="vid2" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-            <source src="Video Assets/Finals/CP-2.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>09.21.2023</caption></button>
-    </div>
-    <div class="container3">
-        <video id="vid3" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-            <source src="Video Assets/Finals/CP-3.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>03.15.2023</caption></button>
-    </div>
-    <div class="container4">
-        <video id="vid4" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
-            <source src="Video Assets/Finals/CP-8.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>12.08.2022</caption></button>
-    </div>
-    <div class="textline1">
-        <!-- USE THIS -->
-        <!-- <p><span id="cycle"></span></p> -->
-        <p>
-            <br>
-            FROM/TO: A line of desire (yītiáo yùwàng xiàn), translated, online desire (zàixiàn yuànwàng). Your frailty (xūruò), mistranslated, my futility (wúyòng). Your gesture (shǒushì), reimagined, my touch (chù pèng).
-            <br>
-        </p>
-        <!-- <p>IN OUR RELATIONSHIP / <span id="lvl1">a line made by desire (一条由欲望构成的线) / </span>desire made by a line (一线所成的愿望) / a line made of desire (一条由欲望组成的线) / desire made of a line (愿望由一条线组成) / a line of desire (一条欲望线) / desire of a line (一线的愿望) / a desire line (欲望线) / online desire (在线愿望) / desire line (欲望线).</p> -->
-        <!-- <p><span id="lvl1">A line made by desire (一条由欲望构成的线);</span> <br> a line made of desire (一条由欲望组成的线); <br> a line of desire (一条欲望线); <br> a desire line (欲望线); <br>desire line (欲望线) </p> -->
-        <!-- <p>a line made by desire (一条由欲望构成的线);</p>
-       <p>a line made of desire (一条由欲望组成的线);</p>
-       <p>a line of desire (一条欲望线);</p> 
-       <p>a desire line (欲望线);</p>
-       <p>desire line (欲望线)</p> -->
-       <!-- <p>love your work........question - is your online Chinese painting class videos accompanied by any printable handouts to keep for reference?.....if they are available, do you have to purchase them separately from whichever subscription program you choose?........hope to hear from you........thanks</p> -->
-    </div>
-    <div class="container5">
-        <video id="vid5" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-6.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>01.24.2023</caption></button>
-    </div>
-    <div class="container6">
-        <video id="vid6" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-7.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>05.19.2023</caption></button>
-    </div>
-    <div class="container7">
-        <video id="vid7" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-4.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>12.15.2022</caption></button>
-    </div>
-    <div class="container8">
-        <video id="vid8" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-9.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>08.08.2022</caption></button>
-    </div>
-    <div class="container9">
-        <video id="vid9" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-14.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>01.04.2024</caption></button>
-    </div>
-    <div class="container10">
-        <video id="vid10" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-13.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>11.23.2023</caption></button>
-    </div>
-    <div class="container11">
-        <video id="vid11" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-11.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>04.10.2023</caption></button>
-    </div>
-    <div class="container12">
-        <video id="vid12" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-12.mp4" type=video/mp4>
-        </video>
-        <button class="button"><caption>07.29.2022</caption></button>
-    </div>
-    <div class="container13">
-        <video id="vid13" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-10.mp4" type=video/mp4>
-        </video>
-        <button class="button">11.30.2023</button>
-    </div>
-    <div class="container14">
-        <video id="vid14" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-17.mp4" type=video/mp4>
-        </video>
-        <button class="button">03.06.2021</button>
-    </div>
-    <div class="container15">
-        <video id="vid15" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-18.mp4" type=video/mp4>
-        </video>
-        <button class="button">08.15.2023</button>
-    </div>
-    <div class="container16">
-        <video id="vid16" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-23.mp4" type=video/mp4>
-        </video>
-        <button class="button">08.18.2023</button>
-    </div>
-    <div class="container17">
-        <video id="vid17" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-16.mp4" type=video/mp4>
-        </video>
-        <button class="button">11.30.2023</button>
-    </div>
-    <div class="container18">
-        <video id="vid18" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-15.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container19">
-        <video id="vid19" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-22.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container20">
-        <video id="vid20" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-19.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container25">
-        <video id="vid9" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-24.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container26">
-        <video id="vid10" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-23.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container27">
-        <video id="vid11" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-28.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container28">
-        <video id="vid12" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-20.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container21">
-        <video id="vid5" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-21.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container22">
-        <video id="vid6" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-25.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container23">
-        <video id="vid7" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-27.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container24">
-        <video id="vid8" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-26.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container29">
-        <video id="vid13" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-29.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container30">
-        <video id="vid14" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-5.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container31">
-        <video id="vid15" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-30.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <div class="container32">
-        <video id="vid16" width=100% height=100% autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
-            <source src="Video Assets/Finals/CP-31.mp4" type=video/mp4>
-        </video>
-        <button class="button">{  play  }</button>
-    </div>
-    <!-- <div class="text">
-        <p>Desire paths are informal pathways created by pedestrians, bikers, and animals that carve out routes considered more desirable to travelers.</p>
-    </div> -->
-</div>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"
-    integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
-<script src="main.js"></script>
-</html>
+h1 {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    z-index: 3;
+}
+
+h2 {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 3;
+}
+
+p {
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    /* color: white; */
+}
+
+@font-face {
+    font-family: Founder Grotesk Mono;
+    src: url(founders-grotesk-mono-test-light.woff);
+  }
+
+caption {
+    font-family: monospace;
+    font-size: 10px;
+}
+
+.header-bg {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+}
+
+.textline1 {
+    width: 100vw;
+    padding: 0px 15px;
+    /* color: white; */
+}
+
+#cycle1:after {
+    animation-name: cycle1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    content: "";
+}
+
+@keyframes cycle1 {
+    0% {
+        content: "10.21.2023";
+    }
+    50% {
+        content: "Chinese Brush Painting Basic Lesson 1:1";
+    }
+    100% {
+        content: "10.21.2023";
+    }
+  }
+
+/* #cycle:after {
+    animation-name:cycle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    content: "";
+  }
+
+  @keyframes cycle {
+    0% {
+        content: "TO IMITATE / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    10% {
+        content: "To imitate / A LINE MADE BY DESIRE (YĪTIÁO YÓU YÙWÀNG GÒUCHÉNG DE XIÀN) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    20% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / DESIRE MADE BY A LINE (YĪXIÀN SUǑ CHÉNG DE YUÀNWÀNG) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    30% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / A LINE MADE OF DESIRE (YĪTIÁO YÓU YÙWÀNG ZǓCHÉNG DE XIÀN) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    40% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / DESIRE MADE OF A LINE (YUÀNWÀNG YÓU YĪTIÁO XIÀN ZǓCHÉNG) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    50% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / A LINE OF DESIRE (YĪTIÁO YÙWÀNG XIÀN) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    60% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / DESIRE OF A LINE (YĪXIÀN DE YUÀNWÀNG) / a desire line (yùwàng xiàn) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    70% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / A DESIRE LINE (YÙWÀNG XIÀN) / a line desire (yītiáo xiàn de yuànwàng) / online desire (zàixiàn yuànwàng).";
+    }
+    80% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / A LINE DESIRE (YĪTIÁO XIÀN DE YUÀNWÀNG) / online desire (zàixiàn yuànwàng).";
+    }
+    90% {
+        content: "To imitate / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / desire line (yùwàng xiàn) / ONLINE DESIRE (ZÀIXIÀN YUÀNWÀNG).";
+    }
+    100% {
+        content: "TO IMITATE / a line made by desire (yītiáo yóu yùwàng gòuchéng de xiàn) / desire made by a line (yīxiàn suǒ chéng de yuànwàng) / a line made of desire (yītiáo yóu yùwàng zǔchéng de xiàn) / desire made of a line (yuànwàng yóu yītiáo xiàn zǔchéng) / a line of desire (yītiáo yùwàng xiàn) / desire of a line (yīxiàn de yuànwàng) / a desire line (yùwàng xiàn) / desire line (yùwàng xiàn) / online desire (zàixiàn yuànwàng).";
+    }
+  } */
+
+#lvl1 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.text {
+    width: 100vw;
+    position: fixed;
+    bottom: 2%;
+    z-index: 4;
+    padding: 0px 15px;
+    /* justify-content: flex-start; */
+}
+
+/* .grad1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 75px;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0));
+    z-index: 2;
+  } */
+
+/* .button {
+    font-family: monospace;
+    color: white;
+    background-color: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+} */
+
+.container1, .container2, .container3, .container4,
+.container5, .container6, .container7, .container8,
+.container9, .container10, .container11, .container12,
+.container13, .container14, .container15, .container16,
+.container17, .container18, .container19, .container20,
+.container21, .container22, .container23, .container24,
+.container25, .container26, .container27, .container28,
+.container29, .container30, .container31, .container32 {
+    position: relative;
+    z-index: 1;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    animation: blur-anim 5s linear forwards;
+}
+
+@keyframes blur-anim {
+	100% {	filter: blur(30px) };
+}
+
+.container1:hover, .container2:hover, .container3:hover, .container4:hover,
+.container5:hover, .container6:hover, .container7:hover, .container8:hover,
+.container9:hover, .container10:hover, .container11:hover, .container12:hover,
+.container13:hover, .container14:hover, .container15:hover, .container16:hover,
+.container17:hover, .container18:hover, .container19:hover, .container20:hover,
+.container21:hover, .container22:hover, .container23:hover, .container24:hover,
+.container25:hover, .container26:hover, .container27:hover, .container28:hover,
+.container29:hover, .container30:hover, .container31:hover, .container32:hover {
+    animation: blur-undo 1s linear forwards;
+}
+
+@keyframes blur-undo {
+    0% { filter: blur(30px) }
+	100% {	filter: blur(0px) };
+}
+
+.container1 .button, .container2 .button, .container3 .button, .container4 .button,
+.container5 .button, .container6 .button, .container7 .button, .container8 .button,
+.container9 .button, .container10 .button, .container11 .button, .container12 .button,
+.container13 .button, .container14 .button, .container15 .button, .container16 .button,
+.container17 .button, .container18 .button, .container19 .button, .container20 .button,
+.container21 .button, .container22 .button, .container23 .button, .container24 .button,
+.container25 .button, .container26 .button, .container27 .button, .container28 .button,
+.container29 .button, .container30 .button, .container31 .button, .container32 .button {
+    cursor: crosshair;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: none;
+    /* font-family: 'TestFont', monospace; */
+    font-size: 12px;
+    font-family: monospace;
+    background-color: none;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+    border: none;
+    margin: 0;
+    padding: 0;
+    /* padding: 16px 30px; */
+    border: none;
+    text-align: center;
+  }
+
+.order {
+    /* create the flex container */
+    /* left: 0%; */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* flex: 1; */
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    margin: 0;
+    padding: 0;
+    overflow-y: none;
+}
+
+.row2 {
+    /* create the flex container */
+    /* position: absolute; */
+    /* top: 25%; */
+    /* left: 0%; */
+    transform: translate(0px, -4px);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* flex: 1; */
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    margin: 0;
+    padding: 0;
+}
+
+.row3 {
+    /* create the flex container */
+    /* position: absolute; */
+    /* top: 25%; */
+    /* left: 0%; */
+    transform: translate(0px, -8px);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* flex: 1; */
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .container1, .container2, .container3, .container4,
+    .container5, .container6, .container7, .container8,
+    .container9, .container10, .container11, .container12,
+    .container13, .container14, .container15, .container16,
+    .container17, .container18, .container19, .container20,
+    .container21, .container22, .container23, .container24,
+    .container25, .container26, .container27, .container28,
+    .container29, .container30, .container31, .container32 {
+        position: relative;
+        z-index: 1;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        filter: blur(28px);
+        transition: filter 1.25s
+    }
+    p {
+        font-family: monospace;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+@media only screen and (orientation: portrait)
+{
+    .container1, .container2, .container3, .container4,
+    .container5, .container6, .container7, .container8,
+    .container9, .container10, .container11, .container12,
+    .container13, .container14, .container15, .container16,
+    .container17, .container18, .container19, .container20,
+    .container21, .container22, .container23, .container24,
+    .container25, .container26, .container27, .container28,
+    .container29, .container30, .container31, .container32 {
+        position: relative;
+        z-index: 1;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        filter: blur(28px);
+        transition: filter 1.25s
+    }
+    p {
+        font-family: monospace;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
