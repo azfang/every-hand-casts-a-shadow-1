@@ -1,6 +1,5 @@
 body {
     cursor: crosshair;
-    /* cursor: none; */
 }
 
 * {
@@ -26,7 +25,6 @@ p {
     font-family: monospace;
     font-size: 15px;
     line-height: 1.5;
-    /* color: white; */
 }
 
 @font-face {
@@ -46,30 +44,25 @@ caption {
     z-index: 2;
 }
 
-.textline1 {
+.textline1, .textline2 {
     width: 100vw;
-    padding: 0px 15px;
-    /* color: white; */
+    margin: 0px 15px;
 }
 
-#cycle1:after {
-    animation-name: cycle1;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    content: "";
+#pauseVideo {
+    position: fixed;
+    z-index: 4;
+    margin: 15px;
+    cursor: pointer;
 }
 
-@keyframes cycle1 {
-    0% {
-        content: "10.21.2023";
-    }
-    50% {
-        content: "Chinese Brush Painting Basic Lesson 1:1";
-    }
-    100% {
-        content: "10.21.2023";
-    }
-  }
+#playVideo {
+    position: fixed;
+    z-index: 4;
+    right: 0%;
+    margin: 15px;
+    cursor: pointer;
+}
 
 /* #cycle:after {
     animation-name:cycle;
@@ -125,25 +118,7 @@ caption {
     bottom: 2%;
     z-index: 4;
     padding: 0px 15px;
-    /* justify-content: flex-start; */
 }
-
-/* .grad1 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 75px;
-    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0));
-    z-index: 2;
-  } */
-
-/* .button {
-    font-family: monospace;
-    color: white;
-    background-color: none;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border: none;
-} */
 
 .container1, .container2, .container3, .container4,
 .container5, .container6, .container7, .container8,
@@ -198,70 +173,51 @@ caption {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background: none;
-    /* font-family: 'TestFont', monospace; */
     font-size: 12px;
     font-family: monospace;
     background-color: none;
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
     border: none;
     margin: 0;
     padding: 0;
-    /* padding: 16px 30px; */
     border: none;
     text-align: center;
   }
 
 .order {
-    /* create the flex container */
-    /* left: 0%; */
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    /* flex: 1; */
     width: 100%;
     flex-wrap: wrap;
-    /* justify-content: flex-start; */
     margin: 0;
     padding: 0;
     overflow-y: none;
 }
 
 .row2 {
-    /* create the flex container */
-    /* position: absolute; */
-    /* top: 25%; */
-    /* left: 0%; */
     transform: translate(0px, -4px);
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    /* flex: 1; */
     width: 100%;
     flex-wrap: wrap;
-    /* justify-content: flex-start; */
     margin: 0;
     padding: 0;
 }
 
 .row3 {
-    /* create the flex container */
-    /* position: absolute; */
-    /* top: 25%; */
-    /* left: 0%; */
     transform: translate(0px, -8px);
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    /* flex: 1; */
     width: 100%;
     flex-wrap: wrap;
-    /* justify-content: flex-start; */
     margin: 0;
     padding: 0;
 }
@@ -302,7 +258,7 @@ caption {
     .container29, .container30, .container31, .container32 {
         position: relative;
         z-index: 1;
-        width: 50%;
+        width: 100%;
         margin: 0;
         padding: 0;
         filter: blur(28px);
