@@ -236,7 +236,7 @@ caption {
         width: 50%;
         margin: 0;
         padding: 0;
-        filter: blur(28px);
+        filter: blur(30px);
         transition: filter 1.25s
     }
     p {
@@ -261,12 +261,53 @@ caption {
         width: 100%;
         margin: 0;
         padding: 0;
-        filter: blur(28px);
+        filter: blur(30px);
         transition: filter 1.25s
     }
     p {
         font-family: monospace;
         font-size: 16px;
         line-height: 1.25;
+    }
+    .container1:hover, .container2:hover, .container3:hover, .container4:hover,
+    .container5:hover, .container6:hover, .container7:hover, .container8:hover,
+    .container9:hover, .container10:hover, .container11:hover, .container12:hover,
+    .container13:hover, .container14:hover, .container15:hover, .container16:hover,
+    .container17:hover, .container18:hover, .container19:hover, .container20:hover,
+    .container21:hover, .container22:hover, .container23:hover, .container24:hover,
+    .container25:hover, .container26:hover, .container27:hover, .container28:hover,
+    .container29:hover, .container30:hover, .container31:hover, .container32:hover {
+        animation: blur-undo 1s linear forwards;
+    }
+
+    @keyframes blur-undo {
+        0% { filter: blur(30px) }
+	    100% {	filter: blur(0px) };
+    }
+
+    .container1 .button, .container2 .button, .container3 .button, .container4 .button,
+    .container5 .button, .container6 .button, .container7 .button, .container8 .button,
+    .container9 .button, .container10 .button, .container11 .button, .container12 .button,
+    .container13 .button, .container14 .button, .container15 .button, .container16 .button,
+    .container17 .button, .container18 .button, .container19 .button, .container20 .button,
+    .container21 .button, .container22 .button, .container23 .button, .container24 .button,
+    .container25 .button, .container26 .button, .container27 .button, .container28 .button,
+    .container29 .button, .container30 .button, .container31 .button, .container32 .button {
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        min-width: 100%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background: none;
+        font-size: 14px;
+        font-family: monospace;
+        background-color: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-align: center;
     }
 }
