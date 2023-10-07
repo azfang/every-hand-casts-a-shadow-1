@@ -23,14 +23,19 @@ h2 {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: monospace;
+    font-size: 15px;
     line-height: 1.5;
     /* color: white; */
 }
 
+@font-face {
+    font-family: Founder Grotesk Mono;
+    src: url(founders-grotesk-mono-test-light.woff);
+  }
+
 caption {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     font-size: 10px;
 }
 
@@ -53,6 +58,7 @@ caption {
     animation-iteration-count: infinite;
     content: "";
 }
+
 @keyframes cycle1 {
     0% {
         content: "10.21.2023";
@@ -283,11 +289,11 @@ caption {
         width: 50%;
         margin: 0;
         padding: 0;
-/*         filter: blur(28px); */
+        filter: blur(28px);
         transition: filter 1.25s
     }
     p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: monospace;
         font-size: 16px;
         line-height: 1.25;
         /* color: white; */
@@ -306,14 +312,14 @@ caption {
     .container29, .container30, .container31, .container32 {
         position: relative;
         z-index: 1;
-        width: 100%;
+        width: 50%;
         margin: 0;
         padding: 0;
         filter: blur(28px);
         transition: filter 1.25s
     }
     p {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: monospace;
         font-size: 16px;
         line-height: 1.25;
         /* color: white; */
