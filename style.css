@@ -320,6 +320,9 @@ caption {
         border: none;
         text-align: center;
     }
+    p {
+        font-size: 20px;
+    }
     .mobile-text {
         position: fixed;
         width: 100vw;
@@ -329,5 +332,6 @@ caption {
         transform: translateY(-50%);
         opacity: 1;
         z-index: 8;
+	font-size: 20px;
     }
 }
