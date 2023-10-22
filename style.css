@@ -44,6 +44,16 @@ caption {
     z-index: 2;
 }
 
+.mobile-text {
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
 .textline1, .textline2 {
     width: 100vw;
     margin: 0px 15px;
@@ -309,5 +319,15 @@ caption {
         padding: 0;
         border: none;
         text-align: center;
+    }
+    .mobile-text {
+        position: fixed;
+        width: 100vw;
+        text-align: center;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        opacity: 1;
+        z-index: 8;
     }
 }
