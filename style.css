@@ -55,11 +55,13 @@ caption {
 .textline1 {
     width: 100vw;
     margin: 0px 15px;
+font-size: 12.75px;
 }
 
 .textline2 {
 width: 100vw;
 	margin: 0px 15px 15px 15px;
+	font-size: 12.75px;
 }
 
 #pauseVideo {
