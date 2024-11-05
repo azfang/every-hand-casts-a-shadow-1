@@ -9,7 +9,8 @@ body {
 
 h1 {
     font-family: monospace;
-	font-size: 12.75px;
+	font-weight: normal;
+	font-size: 15px;
 }
 
 h2 {
