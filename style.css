@@ -22,7 +22,7 @@ h2 {
 p {
     font-family: 'Founder Grotesk Mono', monospace;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 @font-face {
@@ -59,7 +59,7 @@ caption {
 
 .textline2 {
 width: 100vw;
-	margin: 0px 15px 0px 15px;
+	margin: 0px 15px 15px 15px;
 }
 
 #pauseVideo {
