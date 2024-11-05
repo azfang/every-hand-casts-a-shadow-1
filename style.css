@@ -1,6 +1,6 @@
-/*body {
+body {
     cursor: crosshair;
-}*/
+}
 
 * {
     margin: 0;
@@ -63,7 +63,7 @@ caption {
     position: fixed;
     z-index: 4;
     margin: 15px;
-    cursor: pointer;
+    cursor: grab;
 }
 
 #playVideo {
@@ -71,7 +71,7 @@ caption {
     z-index: 4;
     right: 0%;
     margin: 15px;
-    cursor: pointer;
+    cursor: grab;
 }
 
 /* #cycle:after {
