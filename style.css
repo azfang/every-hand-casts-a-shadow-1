@@ -51,9 +51,14 @@ caption {
     opacity: 0;
 }
 
-.textline1, .textline2 {
+.textline1 {
     width: 100vw;
     margin: 0px 15px;
+}
+
+.textline2 {
+width: 100vw;
+	margin: 0px 15px 15px 15px;
 }
 
 #pauseVideo {
