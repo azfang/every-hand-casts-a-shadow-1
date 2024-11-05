@@ -10,18 +10,18 @@ body {
 h1 {
     font-family: 'Founder Grotesk Mono', monospace;
 	font-weight: normal;
-	font-size: 15px;
+	font-size: 12.75px;
 }
 
 h2 {
     font-family: 'Founder Grotesk Mono', monospace;
 	font-weight: normal;
-	font-size: 15px;
+	font-size: 12.75px;
 }
 
 p {
     font-family: 'Founder Grotesk Mono', monospace;
-    font-size: 15px;
+    font-size: 12.75px;
     line-height: 1.25;
 }
 
@@ -32,7 +32,7 @@ p {
 
 caption {
     font-family: 'Founder Grotesk Mono', monospace;
-    font-size: 9px;
+    font-size: 12.75px;
 }
 
 .header-bg {
