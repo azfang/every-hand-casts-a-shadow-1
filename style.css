@@ -22,7 +22,7 @@ h2 {
 p {
     font-family: 'Founder Grotesk Mono', monospace;
     font-size: 15px;
-    line-height: 1;
+    line-height: 1.25;
 }
 
 @font-face {
@@ -151,9 +151,9 @@ width: 100vw;
     animation: blur-anim 5s linear forwards;
 }
 
-@keyframes blur-anim {
+/*@keyframes blur-anim {
 	100% {	filter: blur(30px) };
-}
+}*/
 
 .container1:hover, .container2:hover, .container3:hover, .container4:hover,
 .container5:hover, .container6:hover, .container7:hover, .container8:hover,
