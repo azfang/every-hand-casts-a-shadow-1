@@ -10,29 +10,14 @@ $(document).ready(function(){
     
     });
 
-var ppbutton = document.getElementById("playVideo");
-ppbutton.addEventListener("click", playVideo);
-function playVideo() { 
-    $('.vid').trigger('play');
-} 
+// var ppbutton = document.getElementById("playVideo");
+// ppbutton.addEventListener("click", playVideo);
+// function playVideo() { 
+//     $('.vid').trigger('play');
+// } 
 
-var ppbutton = document.getElementById("pauseVideo");
-ppbutton.addEventListener("click", pauseVideo);
-function pauseVideo() { 
-    $('.vid').trigger('pause');
-} 
-
-// var ppbutton2 = document.getElementById("vid2button");
-// ppbutton2.addEventListener("click", playPause2);
-// vid2 = document.getElementById("vid2");
-// function playPause2() { 
-//     if (vid2.paused) {
-//         vid2.play();
-//         vid2.loop = true;
-//         ppbutton2.innerHTML = "{  pause  }";
-//         }
-//     else  {
-//         vid2.pause(); 
-//         ppbutton2.innerHTML = "{  play  }";
-//         }
+// var ppbutton = document.getElementById("pauseVideo");
+// ppbutton.addEventListener("click", pauseVideo);
+// function pauseVideo() { 
+//     $('.vid').trigger('pause');
 // } 
